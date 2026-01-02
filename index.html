@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- GLOBAL MARKETING & SEO ENGINE (Targeting US, UK, Global) -->
+    <title>Reliable MHS Group | Best Guesthouse Kitengela | BnB near JKIA Nairobi</title>
+    <meta name="description" content="Affordable luxury Guesthouse in Kitengela, Kenya. 25 mins from JKIA Airport. Best BnB for international travelers, business stays, and safari tours to Maasai Mara & Serengeti.">
+    <meta name="keywords" content="Guesthouse Nairobi, BnB Kitengela, Houses to stay in Kenya, Guesthouse near JKIA, Reliable MHS Group, Maasai Mara Safari, Serengeti Tours, Budget stay Nairobi, Secure accommodation Kenya">
+    <meta name="author" content="Reliable MHS Group">
+    <meta property="og:title" content="Reliable MHS Group - Premium Hospitality & Safaris">
+    <meta property="og:description" content="Your home away from home in Kitengela. Experience Kenyan hospitality with a global touch.">
+    <meta property="og:type" content="website">
+    
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; color: #1a1a1a; }
+        
+        /* 3D HERO WRITINGS */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+        }
+        .hero-title {
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 0.9;
+            text-shadow: 
+                0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 
+                0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 
+                0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 
+                0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+            animation: floatText 3s ease-in-out infinite;
+        }
+        @keyframes floatText {
+            0%, 100% { transform: translateY(0) rotateX(0); }
+            50% { transform: translateY(-10px) rotateX(5deg); }
+        }
+
+        /* CONCIERGE / EXTRA COST HIGHLIGHT */
+        .extra-cost-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+            border: 2px solid #15803d;
+            box-shadow: 0 20px 40px rgba(21, 128, 61, 0.15);
+        }
+
+        /* LIGHTBOX */
+        #lightbox {
+            display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.98); justify-content: center; align-items: center;
+        }
+        #lightbox img { max-width: 90%; max-height: 80%; border: 4px solid white; border-radius: 10px; }
+
+        .card-3d { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 1px solid rgba(0,0,0,0.05); cursor: pointer; }
+        .card-3d:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 40px 80px rgba(0,0,0,0.1); }
+
+        .glass-nav { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); }
+        .whatsapp-btn {
+            position: fixed; bottom: 30px; right: 30px; z-index: 1000;
+            background: #25d366; color: white; padding: 15px 25px; border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.4); display: flex; align-items: center; gap: 10px; font-weight: 900;
+        }
+        .ai-assistant {
+            position: fixed; bottom: 30px; left: 30px; z-index: 1000;
+            background: #15803d; color: white; width: 70px; height: 70px; border-radius: 20px;
+            display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(21, 128, 61, 0.4); cursor: pointer;
+        }
+        .chat-box {
+            position: fixed; bottom: 110px; left: 30px; width: 320px; background: white; border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3); display: none; flex-direction: column; z-index: 1001; overflow: hidden;
+        }
+        .seg-btn { 
+            padding: 12px 24px; border-radius: 8px; font-weight: 900; font-size: 10px; 
+            text-transform: uppercase; transition: 0.3s; border: 2px solid #15803d;
+        }
+        .seg-btn.active { background: #15803d; color: white; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- LIGHTBOX SLIDER -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <span class="absolute top-10 right-10 text-white text-5xl cursor-pointer">&times;</span>
+        <button class="absolute left-5 text-white text-6xl" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</button>
+        <img id="lightbox-img" src="">
+        <button class="absolute right-5 text-white text-6xl" onclick="event.stopPropagation(); changeImage(1)">&#10095;</button>
+    </div>
+
+    <!-- WHATSAPP PORTAL -->
+    <a href="https://wa.me/254710813573" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span>BOOKING HUB</span>
+    </a>
+
+    <!-- AI CHAT ASSISTANT -->
+    <div class="ai-assistant" onclick="toggleChat()">
+        <i class="fas fa-comment-dots text-3xl"></i>
+    </div>
+    <div id="chatBox" class="chat-box shadow-2xl">
+        <div class="bg-green-800 p-4 text-white font-black text-[10px] flex justify-between items-center tracking-widest uppercase">
+            <span><i class="fas fa-headset mr-2"></i> Smart Concierge AI</span>
+            <button onclick="toggleChat()">×</button>
+        </div>
+        <div id="chatBody" class="p-4 h-64 overflow-y-auto text-[11px] space-y-3 bg-gray-50">
+            <p class="bg-white p-3 rounded-2xl shadow-sm italic font-bold">"Welcome! I am your AI guide to Reliable MHS Group. How can I assist you?"</p>
+        </div>
+        <div class="p-3 bg-white border-t flex">
+            <input id="chatInput" type="text" placeholder="Type info request..." class="flex-grow p-2 outline-none text-xs font-bold uppercase tracking-widest">
+            <button onclick="aiSearch()" class="text-green-700 px-2"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm py-4 px-10 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="images/logo.png" class="w-10 h-10 rounded-full border border-green-700 shadow-sm" alt="Reliable Logo" onerror="this.src='https://via.placeholder.com/50?text=LOGO'">
+            <span class="font-black text-xl tracking-tighter uppercase">RELIABLE <span class="text-green-700">MHS GROUP</span></span>
+        </div>
+        <div class="hidden lg:flex space-x-8 font-black text-[10px] tracking-[0.25em] uppercase text-gray-400">
+            <a href="#home" class="hover:text-green-700 transition">Home</a>
+            <a href="#about" class="hover:text-green-700 transition">About</a>
+            <a href="#guesthouse" class="hover:text-green-700 transition">Guesthouse</a>
+            <a href="#tours" class="hover:text-green-700 transition">Tours</a>
+            <a href="#reviews" class="hover:text-green-700 transition">Reviews</a>
+            <a href="#contact" class="bg-green-700 text-white px-8 py-2 rounded-full shadow-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO (3D TEXT ENHANCED) -->
+    <section id="home" class="hero-section flex items-center justify-center text-center text-white">
+        <div data-aos="zoom-in" data-aos-duration="2000" class="px-4">
+            <h1 class="hero-title font-black uppercase tracking-tighter italic">Building Trust</h1>
+            <p class="text-xl md:text-3xl font-light tracking-[0.5em] uppercase text-green-400 mt-6 drop-shadow-lg">delivering Excellence & Reliability</p>
+            <div class="mt-16 flex flex-col md:flex-row justify-center gap-6">
+                <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-yellow-400">Global Standard Choice</p>
+                    <p class="text-xs italic">Premier Choice for International Travelers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="py-32 px-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
+        <div data-aos="fade-right">
+            <h3 class="text-5xl font-black mb-10 tracking-tighter uppercase italic leading-none">Est. <span class="text-green-700 underline underline-offset-8">2013</span></h3>
+            <p class="text-gray-500 text-xl leading-relaxed mb-12 font-light italic">
+                Reliable MHS Group is a multifaceted Kenyan leader, established in December 2013. We don't just provide services; we provide peace of mind. From the serene gardens of our Kitengela Guesthouse to the rugged trails of the Maasai Mara, our mission is excellence.
+            </p>
+            <div class="grid grid-cols-2 gap-8 text-[11px] font-black uppercase tracking-widest text-gray-800 border-t pt-10">
+                <div class="flex items-center space-x-3"><i class="fas fa-check-circle text-green-600"></i><span>Tailored Solutions</span></div>
+                <div class="flex items-center space-x-3"><i class="fas fa-check-circle text-green-600"></i><span>Trusted Globally</span></div>
+                <div class="flex items-center space-x-3"><i class="fas fa-check-circle text-green-600"></i><span>Safety Certified</span></div>
+                <div class="flex items-center space-x-3"><i class="fas fa-check-circle text-green-600"></i><span>24/7 Support</span></div>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="p-4 border-[15px] border-gray-50 rounded-[60px] shadow-2xl bg-white">
+            <img src="images/about.jpg" class="rounded-[40px] w-full h-[500px] object-cover" alt="Reliable MHS Leadership" onerror="this.src='https://via.placeholder.com/600x800?text=About+Image'">
+        </div>
+    </section>
+
+    <!-- 3. GUESTHOUSE & PRICING -->
+    <section id="guesthouse" class="py-24 bg-gray-50 px-10 border-y">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-6xl font-black tracking-tighter italic uppercase underline underline-offset-8 decoration-green-700">Guesthouse Hub</h2>
+            <div class="mt-12 inline-block bg-yellow-400 text-black px-12 py-5 rounded-3xl shadow-xl card-3d">
+                <p class="text-xs font-black uppercase tracking-widest">Global Value Rate</p>
+                <p class="text-4xl font-black italic">KES 2,500 <span class="text-lg opacity-60">/ $20 USD</span></p>
+                <p class="text-[9px] font-bold uppercase tracking-tighter mt-1 opacity-60">Room Only • Secure Booking</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="showSegment('exterior')" id="btn-exterior" class="seg-btn active">Exterior</button>
+                <button onclick="showSegment('rooms')" id="btn-rooms" class="seg-btn">Rooms</button>
+                <button onclick="showSegment('living')" id="btn-living" class="seg-btn">Living Room</button>
+            </div>
+
+            <div class="bg-white p-8 rounded-[50px] shadow-2xl border mb-16">
+                <!-- SEGMENTS MAP TO images/ext1.jpg etc -->
+                <div id="seg-exterior" class="gallery-content grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div onclick="openLightbox(0,'exterior')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/ext1.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(1,'exterior')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/ext2.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(2,'exterior')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/ext3.jpg" class="w-full h-full object-cover"></div>
+                </div>
+                <div id="seg-rooms" class="gallery-content hidden grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div onclick="openLightbox(0,'rooms')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/bed1.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(1,'rooms')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/bed2.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(2,'rooms')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/bed3.jpg" class="w-full h-full object-cover"></div>
+                </div>
+                <div id="seg-living" class="gallery-content hidden grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div onclick="openLightbox(0,'living')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/liv1.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(1,'living')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/liv2.jpg" class="w-full h-full object-cover"></div>
+                    <div onclick="openLightbox(2,'living')" class="h-64 rounded-2xl overflow-hidden card-3d"><img src="images/liv3.jpg" class="w-full h-full object-cover"></div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="bg-white p-12 rounded-[50px] shadow-sm border card-3d">
+                    <h5 class="text-xl mb-8 text-green-700 italic border-b-2 uppercase">Hospitality</h5>
+                    <ul class="text-[10px] font-black uppercase space-y-4 text-gray-500 tracking-widest">
+                        <li>Garden & Grill Area</li><li>24/7 Security Support</li><li>Fiber WiFi & Hot Shower</li><li>Secured Parking</li>
+                    </ul>
+                </div>
+                <div class="bg-green-900 text-white p-12 rounded-[50px] shadow-2xl font-bold text-[10px] uppercase card-3d">
+                    <h5 class="text-xl mb-10 text-yellow-500 italic underline">Strategic Link</h5>
+                    <ul class="space-y-6 tracking-[0.2em]">
+                        <li class="flex justify-between border-b border-white/10 pb-2"><span>JKIA Airport</span> <span>30 Mins</span></li>
+                        <li class="flex justify-between border-b border-white/10 pb-2"><span>Tier 1 Banks</span> <span>5 Mins</span></li>
+                        <li class="flex justify-between"><span>Supermarket</span> <span>5 Mins</span></li>
+                    </ul>
+                </div>
+                <!-- EXTRA COSTS - HIGH VISIBILITY -->
+                <div class="extra-cost-card p-12 rounded-[50px] card-3d border-2">
+                    <h5 class="text-2xl mb-8 text-red-600 font-black italic uppercase underline underline-offset-8 decoration-red-200">Extra Concierge</h5>
+                    <div class="grid grid-cols-1 gap-4 text-[10px] font-black uppercase text-gray-700 tracking-[0.2em]">
+                        <div class="p-4 bg-white/60 rounded-xl shadow-sm flex justify-between"><span>PRIVATE CHEF</span> <i class="fas fa-utensils"></i></div>
+                        <div class="p-4 bg-white/60 rounded-xl shadow-sm flex justify-between"><span>PERSONAL LAUNDRY</span> <i class="fas fa-tshirt"></i></div>
+                        <div class="p-4 bg-white/60 rounded-xl shadow-sm flex justify-between"><span>DEDICATED DRIVER</span> <i class="fas fa-car-side"></i></div>
+                        <div class="p-4 bg-white/60 rounded-xl shadow-sm flex justify-between"><span>SWAHILI MENU</span> <i class="fas fa-fish"></i></div>
+                    </div>
+                    <p class="mt-8 text-[9px] font-black text-green-800 text-center uppercase tracking-widest">Custom Quotes on Request</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SAFARI HUB (GLOBAL MARKETING REACH) -->
+    <section id="tours" class="py-32 px-10 max-w-7xl mx-auto bg-white">
+        <h2 class="text-center text-6xl font-black mb-12 uppercase tracking-tighter italic">Safari Hub</h2>
+        <p class="text-center font-black text-green-700 text-[10px] mb-20 uppercase tracking-[0.4em]">Rates Provided Upon Global Booking Inquiry</p>
+
+        <div class="mb-32">
+            <h4 class="text-3xl font-black mb-16 italic uppercase tracking-widest text-green-700 border-b-4 border-green-700 inline-block">Outside Nairobi</h4>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div class="h-[450px] rounded-[40px] overflow-hidden card-3d relative shadow-2xl" onclick="openLightbox(0, 'toursOut')">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 p-8 text-white w-full bg-gradient-to-t from-black"><h5 class="font-black text-2xl uppercase italic">Maasai Mara</h5><p class="text-[9px] font-bold tracking-widest text-green-400 mt-1">240km / 5.5 Hrs</p></div>
+                </div>
+                <div class="h-[450px] rounded-[40px] overflow-hidden card-3d relative shadow-2xl" onclick="openLightbox(1, 'toursOut')">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 p-8 text-white w-full bg-gradient-to-t from-black"><h5 class="font-black text-2xl uppercase italic">Serengeti</h5><p class="text-[9px] font-bold tracking-widest text-green-400 mt-1">413km / 8.5 Hrs</p></div>
+                </div>
+                <div class="h-[450px] rounded-[40px] overflow-hidden card-3d relative shadow-2xl" onclick="openLightbox(2, 'toursOut')">
+                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 p-8 text-white w-full bg-gradient-to-t from-black"><h5 class="font-black text-2xl uppercase italic">Hell's Gate</h5><p class="text-[9px] font-bold tracking-widest text-green-400 mt-1">120km / 2.5 Hrs</p></div>
+                </div>
+                <div class="h-[450px] rounded-[40px] overflow-hidden card-3d relative shadow-2xl" onclick="openLightbox(3, 'toursOut')">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 p-8 text-white w-full bg-gradient-to-t from-black"><h5 class="font-black text-2xl uppercase italic">Amboseli</h5><p class="text-[9px] font-bold tracking-widest text-green-400 mt-1">160km / 3.5 Hrs</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-20">
+            <div>
+                <h4 class="text-2xl font-black mb-12 text-green-700 italic border-b-2 uppercase">Nairobi Experience</h4>
+                <div class="grid grid-cols-3 gap-4">
+                    <div onclick="openLightbox(0, 'nairobi')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/giraffe.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Giraffe'"></div>
+                    <div onclick="openLightbox(1, 'nairobi')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/park.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Park'"></div>
+                    <div onclick="openLightbox(2, 'nairobi')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/museum.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Museum'"></div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-2xl font-black mb-12 text-green-700 italic border-b-2 uppercase">Nature Trail</h4>
+                <div class="grid grid-cols-3 gap-4">
+                    <div onclick="openLightbox(0, 'nature')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/ngong.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Ngong'"></div>
+                    <div onclick="openLightbox(1, 'nature')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/karura.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Karura'"></div>
+                    <div onclick="openLightbox(2, 'nature')" class="card-3d rounded-2xl overflow-hidden h-40 shadow-lg border-2 border-green-700/10"><img src="images/oloolua.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/200?text=Oloolua'"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="py-24 bg-gray-50 px-10 border-t">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
+            <div>
+                <h3 class="text-4xl font-black italic mb-12 uppercase tracking-tighter underline decoration-green-700 underline-offset-[15px] italic">Community Hub</h3>
+                <div id="commentList" class="space-y-6 pr-5 max-h-[500px] overflow-y-auto">
+                    <div class="bg-white p-10 rounded-[40px] shadow-lg border-l-8 border-green-700">
+                        <div class="text-yellow-500 mb-5 flex gap-1"><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i><i class="fas fa-star text-xs"></i></div>
+                        <p class="text-[13px] italic font-semibold text-gray-500 leading-relaxed">"International Standard in Kitengela. Professional logistics and serene stay."</p>
+                        <p class="mt-6 text-[10px] font-black uppercase text-green-700 tracking-[0.2em] italic">- International Guest</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-12 rounded-[60px] shadow-2xl border" data-aos="fade-left">
+                <h5 class="font-black uppercase text-xl mb-10 italic text-green-800">Post Experience Review</h5>
+                <form id="ratingForm" class="space-y-5">
+                    <input type="text" id="reviewName" placeholder="NAME *" class="w-full bg-gray-50 p-5 rounded-xl outline-none font-bold text-[10px] uppercase border">
+                    <input type="text" id="reviewContact" placeholder="EMAIL OR PHONE *" class="w-full bg-gray-50 p-5 rounded-xl outline-none font-bold text-[10px] uppercase border">
+                    <div class="flex gap-4 text-3xl text-gray-100" id="starSelection">
+                        <i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(1)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(2)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(3)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(4)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(5)"></i>
+                    </div>
+                    <textarea id="commentInput" placeholder="YOUR EXPERIENCE..." class="w-full bg-gray-50 p-8 rounded-3xl outline-none font-bold text-xs border uppercase" rows="4"></textarea>
+                    <button type="button" onclick="submitReview()" class="w-full bg-green-700 text-white font-black py-6 rounded-3xl hover:bg-green-800 shadow-2xl uppercase tracking-[0.3em] text-[10px]">Execute Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEADERSHIP BOARD -->
+    <section class="py-32 px-10 max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-black mb-24 uppercase tracking-tighter italic italic">Leadership Board</h2>
+        <div class="grid md:grid-cols-4 gap-12 uppercase font-black tracking-widest text-[10px] text-gray-500">
+            <div data-aos="zoom-in"><div class="w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-8 border-gray-50 shadow-2xl"><img src="images/founder.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=FOUNDER'"></div><h5 class="text-gray-800">Co-Founder</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="100"><div class="w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-8 border-gray-50 shadow-2xl"><img src="images/marketing.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=MARKETING'"></div><h5 class="text-gray-800">Digital Marketer</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="200"><div class="w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-8 border-gray-50 shadow-2xl"><img src="images/tours_manager.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=TOURS'"></div><h5 class="text-gray-800">Tours & Travel Mgr</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="300"><div class="w-32 h-32 rounded-full mx-auto mb-8 overflow-hidden border-8 border-gray-50 shadow-2xl"><img src="images/hospitality_manager.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=HOSPITALITY'"></div><h5 class="text-gray-800">Hospitality & Logistics</h5></div>
+        </div>
+    </section>
+
+    <!-- FOOTER & SOCIALS -->
+    <footer id="contact" class="py-24 px-10 border-t bg-white text-center">
+        <h3 class="text-5xl font-black italic mb-12 uppercase tracking-tighter decoration-green-700 underline underline-offset-[15px] italic">Command Center</h3>
+        <div class="space-y-6 text-gray-700 font-black text-2xl mb-16 uppercase tracking-tighter italic">
+            <p>+254 711 942 907 • +254 710 813 573</p>
+            <p class="text-green-700 underline">info@reliablemhsgroup.com</p>
+        </div>
+
+        <div class="flex justify-center space-x-10 mb-24">
+            <a href="https://www.facebook.com/share/16svgFagpj/" target="_blank" class="social-circle text-4xl hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/reliablemhs?igsh=MXE5amZzdWpyMmNxcg==" target="_blank" class="social-circle text-4xl hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@reliable.mhs.group?_r=1&_t=ZM-92cX1ttVTgK" target="_blank" class="social-circle text-4xl hover:text-black transition"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <p class="text-[10px] font-black tracking-[1em] uppercase text-gray-300 italic opacity-60">RELIABLE MHS GROUP © ALL RIGHTS RESERVED • ESTABLISHED 2013</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+
+        const galleryData = {
+            exterior: ["images/ext1.jpg", "images/ext2.jpg", "images/ext3.jpg", "images/ext4.jpg", "images/ext5.jpg", "images/ext6.jpg"],
+            rooms: ["images/bed1.jpg", "images/bed2.jpg", "images/bed3.jpg", "images/bed4.jpg", "images/bed5.jpg", "images/bed6.jpg"],
+            living: ["images/liv1.jpg", "images/liv2.jpg", "images/liv3.jpg", "images/liv4.jpg", "images/liv5.jpg", "images/liv6.jpg"],
+            toursOut: ["https://images.unsplash.com/photo-1547471080-7cc2caa01a7e", "https://images.unsplash.com/photo-1516426122078-c23e76319801", "https://images.unsplash.com/photo-1523805009345-7448845a9e53", "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5"],
+            nairobi: ["images/giraffe.jpg", "images/park.jpg", "images/museum.jpg"],
+            nature: ["images/ngong.jpg", "images/karura.jpg", "images/oloolua.jpg"]
+        };
+        let currentGallery = []; let currentIndex = 0;
+
+        function showSegment(segId) {
+            document.querySelectorAll('.gallery-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('.seg-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('seg-' + segId).classList.remove('hidden');
+            document.getElementById('btn-' + segId).classList.add('active');
+        }
+
+        function openLightbox(idx, seg) {
+            currentGallery = galleryData[seg]; currentIndex = idx; updateLightbox();
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
+        function changeImage(dir) {
+            currentIndex = (currentIndex + dir + currentGallery.length) % currentGallery.length;
+            updateLightbox();
+        }
+        function updateLightbox() {
+            document.getElementById('lightbox-img').src = currentGallery[currentIndex];
+        }
+
+        function toggleChat() {
+            const box = document.getElementById('chatBox');
+            box.style.display = box.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function aiSearch() {
+            const input = document.getElementById('chatInput').value.toLowerCase();
+            const body = document.getElementById('chatBody');
+            let res = "I am processing... Rates are custom quoted based on your request. Use WhatsApp for immediate live rates.";
+            if(input.includes("airport") || input.includes("jkia")) res = "We are exactly 23km (30 Mins) from JKIA Airport.";
+            if(input.includes("price") || input.includes("cost")) res = "Our value rate is KES 2,500 ($20 USD) for Room Only. Safari rates vary.";
+            body.innerHTML += `<div class="bg-green-100 p-4 rounded-xl text-right font-black italic uppercase text-[9px]">You: ${input}</div>`;
+            body.innerHTML += `<div class="bg-white p-4 rounded-xl border-2 border-green-700 font-black text-green-700 shadow-md uppercase text-[9px]">AI: ${res}</div>`;
+            document.getElementById('chatInput').value = ""; body.scrollTop = body.scrollHeight;
+        }
+
+        let currentRating = 0;
+        function setRating(n) {
+            currentRating = n;
+            const stars = document.getElementById('starSelection').children;
+            for(let i=0; i<5; i++) stars[i].style.color = (i < n) ? '#f59e0b' : '#f1f5f9';
+        }
+
+        function submitReview() {
+            const name = document.getElementById('reviewName').value;
+            const contact = document.getElementById('reviewContact').value;
+            const comment = document.getElementById('commentInput').value;
+            const blocked = ["violence", "curse", "bad"];
+            if(blocked.some(word => comment.toLowerCase().includes(word))) { alert("Professional guidelines: language detected."); return; }
+            if(!name || !contact || !comment || currentRating === 0) { alert("Please complete form."); return; }
+            const list = document.getElementById('commentList');
+            list.innerHTML = `<div class="bg-white p-10 rounded-[40px] shadow-2xl border-l-8 border-green-700 mb-6"><div class="text-yellow-500 mb-4">${'<i class="fas fa-star text-xs"></i>'.repeat(currentRating)}</div><p class="text-[12px] italic font-bold text-gray-500">"${comment}"</p><p class="mt-4 text-[10px] font-black uppercase text-green-700 tracking-widest">- ${name}</p></div>` + list.innerHTML;
+            document.getElementById('ratingForm').reset(); setRating(0);
+        }
+    </script>
+</body>
+</html>
