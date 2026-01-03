@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- GLOBAL SEO ENGINE -->
+    <!-- GLOBAL SEO ENGINE: TARGETING US, UK, GLOBAL -->
     <title>Reliable MHS Group | Best Guesthouse Kitengela | BnB near JKIA Nairobi</title>
-    <meta name="description" content="Luxury Guesthouse in Kitengela and World-Class Safari Tours. 25 mins from JKIA. Providing excellence since 2013.">
+    <meta name="description" content="Luxury Guesthouse in Kitengela & World-Class Safari Tours. 25 mins from JKIA. Best BnB for international travelers. Providing excellence since 2013.">
+    <meta name="keywords" content="Guesthouse Nairobi, BnB Kitengela, Houses to stay in Kenya, Guesthouse near JKIA, Reliable MHS Group, Maasai Mara Safari">
     
     <!-- Frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,47 +16,47 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
-        /* CORE RESET & MOBILE FIT */
+        /* GLOBAL RESET & MOBILE PERFORMANCE */
         html, body { 
             max-width: 100%; overflow-x: hidden; width: 100%; margin: 0; padding: 0;
             font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; color: #1a1a1a; 
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* PERFORMANCE FIX: Disable fixed background on mobile to remove lag */
+        /* PERFORMANCE FIX: NO FIXED ATTACHMENT (REMOVES SCROLL LAG) */
         .hero-section {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1920&q=80');
-            background-attachment: fixed;
             background-size: cover;
             background-position: center;
             height: 100vh;
+            display: flex; align-items: center; justify-content: center;
         }
-        @media (max-width: 1024px) { .hero-section { background-attachment: scroll; height: 100svh; } }
 
-        /* 3D TYPOGRAPHY (Responsive) */
+        /* 3D TYPOGRAPHY DESIGN */
         .hero-title {
-            font-size: clamp(2.6rem, 9vw, 7.5rem);
+            font-size: clamp(2.5rem, 9vw, 7.5rem);
             font-weight: 900; line-height: 1; color: #fff; text-transform: uppercase;
-            text-shadow: 2px 2px 0px #15803d, 4px 4px 10px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 0px #15803d, 4px 4px 12px rgba(0,0,0,0.5);
             animation: float3D 4s ease-in-out infinite;
         }
-        @keyframes float3D { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes float3D { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 
         /* WHATSAPP (RIGHT) */
         .whatsapp-btn {
             position: fixed; bottom: 25px; right: 20px; z-index: 1000;
-            background: #25d366; color: white; padding: 12px 20px; border-radius: 50px;
+            background: #25d366; color: white; padding: 12px 22px; border-radius: 50px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2); font-weight: 900; font-size: 11px; transition: 0.3s;
         }
 
-        /* AI CHAT (LEFT) - RESTORED ICON DESIGN */
+        /* AI CHAT (LEFT) - PROFESSIONAL ICON DESIGN */
         .ai-assistant {
             position: fixed; bottom: 25px; left: 20px; z-index: 1000;
-            background: #15803d; color: white; width: 60px; height: 60px; border-radius: 20px;
+            background: #15803d; color: white; width: 65px; height: 65px; border-radius: 20px;
             display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 30px rgba(21,128,61,0.4);
             cursor: pointer; transition: 0.3s; border: 2px solid rgba(255,255,255,0.2);
         }
         .chat-box {
-            position: fixed; bottom: 95px; left: 20px; width: 85vw; max-width: 320px;
+            position: fixed; bottom: 100px; left: 20px; width: 85vw; max-width: 320px;
             background: white; border-radius: 25px; box-shadow: 0 25px 60px rgba(0,0,0,0.3);
             display: none; flex-direction: column; z-index: 1001; overflow: hidden; border: 1px solid #e5e7eb;
         }
@@ -68,65 +69,66 @@
         #lightbox img { max-width: 95%; max-height: 80%; border: 3px solid white; border-radius: 10px; }
 
         .card-3d { transition: transform 0.4s ease; cursor: pointer; background: white; border-radius: 20px; overflow: hidden; }
-        .card-3d:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .card-3d:hover { transform: translateY(-10px); box-shadow: 0 30px 50px rgba(0,0,0,0.1); }
         .img-card { width: 100%; height: 100%; object-fit: cover; }
 
         .glass-nav { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); }
-        .seg-btn { padding: 10px 18px; border-radius: 8px; font-weight: 900; font-size: 9px; text-transform: uppercase; border: 2px solid #15803d; transition: 0.3s; }
+        .seg-btn { padding: 12px 20px; border-radius: 10px; font-weight: 900; font-size: 10px; text-transform: uppercase; border: 2px solid #15803d; transition: 0.3s; }
         .seg-btn.active { background: #15803d; color: white; }
         
         .social-circle {
-            width: 45px; height: 45px; border-radius: 50%; background: #f8fafc;
-            display: flex; align-items: center; justify-content: center; color: #15803d; font-size: 18px; border: 1px solid #e2e8f0; transition: 0.3s;
+            width: 48px; height: 48px; border-radius: 50%; background: #f8fafc;
+            display: flex; align-items: center; justify-content: center; color: #15803d; font-size: 20px; border: 1px solid #e2e8f0; transition: 0.3s;
         }
+        .social-circle:hover { background: #15803d; color: white; transform: scale(1.1); }
     </style>
 </head>
 <body>
 
-    <!-- LIGHTBOX SLIDER -->
+    <!-- LIGHTBOX SLIDER (FOR ENLARGING PHOTOS) -->
     <div id="lightbox" onclick="closeLightbox()">
-        <span class="absolute top-4 right-4 text-white text-4xl cursor-pointer">&times;</span>
+        <span class="absolute top-4 right-4 text-white text-5xl cursor-pointer font-black">&times;</span>
         <button class="absolute left-2 text-white text-5xl p-2" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</button>
         <img id="lightbox-img" src="">
         <button class="absolute right-2 text-white text-5xl p-2" onclick="event.stopPropagation(); changeImage(1)">&#10095;</button>
     </div>
 
-    <!-- WHATSAPP PORTAL -->
-    <a href="https://wa.me/254710813573" target="_blank" class="whatsapp-btn flex items-center gap-2">
-        <i class="fab fa-whatsapp text-2xl"></i><span>BOOK NOW</span>
+    <!-- WHATSAPP BOOKING -->
+    <a href="https://wa.me/254710813573?text=Hello%20Reliable%20MHS%20Group,%20I'd%20like%20to%20request%20rates." target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp text-2xl"></i><span>WHATSAPP BOOKING</span>
     </a>
 
-    <!-- AI SMART CHAT (LEFT) -->
+    <!-- AI CHAT ASSISTANT (LEFT) -->
     <div class="ai-assistant shadow-2xl" onclick="toggleChat()">
-        <i class="fas fa-headset text-2xl"></i>
+        <i class="fas fa-headset text-3xl"></i>
     </div>
     <div id="chatBox" class="chat-box">
         <div class="bg-green-800 p-4 text-white font-bold text-[10px] flex justify-between items-center tracking-widest uppercase">
-            <span><i class="fas fa-robot mr-2"></i> Reliable AI Desk</span>
+            <span><i class="fas fa-robot mr-2"></i> Reliable Support Chat</span>
             <button onclick="toggleChat()">×</button>
         </div>
-        <div id="chatBody" class="p-4 h-64 overflow-y-auto text-[11px] space-y-3 bg-gray-50 font-bold">
-            <p class="bg-white p-3 rounded-xl shadow-sm border text-green-800 italic">"Welcome! I am the Reliable Assistant. How can I help you today?"</p>
+        <div id="chatBody" class="p-5 h-64 overflow-y-auto text-[11px] space-y-3 bg-gray-50 font-bold">
+            <p class="bg-white p-3 rounded-xl shadow-sm border text-green-800 italic">"Welcome! I am the Reliable Smart Assistant. How can I help you today?"</p>
         </div>
         <div class="p-3 border-t bg-white flex">
-            <input id="chatInput" type="text" placeholder="Type info request..." class="flex-grow p-2 outline-none text-xs font-bold uppercase tracking-tighter">
-            <button onclick="aiSearch()" class="text-green-700 px-2"><i class="fas fa-paper-plane"></i></button>
+            <input id="chatInput" type="text" placeholder="Type info request..." class="flex-grow p-2 outline-none text-xs font-bold bg-gray-50 rounded-lg uppercase">
+            <button onclick="aiSearch()" class="text-green-700 px-3"><i class="fas fa-paper-plane"></i></button>
         </div>
     </div>
 
     <!-- NAVIGATION -->
     <nav class="fixed w-full z-50 glass-nav shadow-sm py-3 px-4 md:px-10 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-            <img src="images/logo.png" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-green-700" alt="Logo" onerror="this.src='https://via.placeholder.com/50'">
+            <img src="images/logo.png" class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-green-700 shadow-sm" alt="Logo" onerror="this.src='https://via.placeholder.com/50'">
             <span class="font-black text-sm md:text-xl tracking-tighter uppercase leading-none">RELIABLE <span class="text-green-700">MHS GROUP</span></span>
         </div>
-        <div class="hidden lg:flex space-x-6 font-black text-[9px] tracking-[0.2em] uppercase text-gray-400">
+        <div class="hidden lg:flex space-x-8 font-black text-[9px] tracking-[0.2em] uppercase text-gray-400">
             <a href="#home" class="hover:text-green-700">Home</a>
             <a href="#about" class="hover:text-green-700">About</a>
             <a href="#guesthouse" class="hover:text-green-700">Guesthouse</a>
             <a href="#tours" class="hover:text-green-700">Safaris</a>
             <a href="#reviews" class="hover:text-green-700">Reviews</a>
-            <a href="#contact" class="bg-green-700 text-white px-5 py-2 rounded-full shadow-lg">Contact</a>
+            <a href="#contact" class="bg-green-700 text-white px-6 py-2 rounded-full shadow-lg">Contact</a>
         </div>
     </nav>
 
@@ -146,14 +148,14 @@
                 Reliable MHS Group is a multifaceted Kenyan leader, established in December 2013. We don't just provide services; we provide peace of mind. From the serene gardens of our Kitengela Guesthouse to the rugged trails of the Maasai Mara, our mission is excellence.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[10px] font-black uppercase tracking-widest text-gray-700 border-t pt-8">
-                <div class="flex items-center space-x-3"><i class="fas fa-check-circle text-green-600"></i><span>Tailored Solutions</span></div>
+                <div class="flex items-center space-x-3"><i class="fas fa-gem text-green-600"></i><span>Tailored Solutions</span></div>
                 <div class="flex items-center space-x-3"><i class="fas fa-globe-africa text-green-600"></i><span>Trusted Globally</span></div>
                 <div class="flex items-center space-x-3"><i class="fas fa-shield-check text-green-600"></i><span>Safety Certified</span></div>
                 <div class="flex items-center space-x-3"><i class="fas fa-headset text-green-600"></i><span>24/7 Support</span></div>
             </div>
         </div>
         <div data-aos="fade-left" class="p-2 border-[10px] border-gray-50 rounded-[40px] shadow-2xl">
-            <img src="images/about.jpg" loading="lazy" class="rounded-[30px] w-full h-[350px] md:h-[500px] object-cover" alt="Reliable About">
+            <img src="images/about.jpg" loading="lazy" decoding="async" class="rounded-[30px] w-full h-[350px] md:h-[500px] object-cover" alt="About Photo">
         </div>
     </section>
 
@@ -161,10 +163,10 @@
     <section id="guesthouse" class="py-20 bg-gray-50 px-4 md:px-10 border-y">
         <div class="max-w-7xl mx-auto text-center mb-10">
             <h2 class="text-4xl md:text-6xl font-black tracking-tighter italic uppercase underline decoration-green-700 underline-offset-4 mb-10">Guesthouse Hub</h2>
-            <div class="inline-block bg-yellow-400 text-black px-8 py-4 rounded-2xl shadow-lg card-3d">
-                <p class="text-[9px] font-black uppercase tracking-widest">Global Standard</p>
+            <div class="inline-block bg-yellow-400 text-black px-10 py-4 rounded-3xl shadow-xl card-3d">
+                <p class="text-[9px] font-black uppercase tracking-widest">Global Value Standard</p>
                 <p class="text-2xl md:text-4xl font-black italic">KES 2,500 <span class="text-lg font-normal">/ $20 USD</span></p>
-                <p class="text-[8px] font-bold uppercase mt-1 opacity-60 italic leading-none">Rates per night • Room Only</p>
+                <p class="text-[8px] font-bold uppercase mt-1 opacity-60 italic leading-none">Room Only • Near JKIA</p>
             </div>
         </div>
 
@@ -178,40 +180,40 @@
             <div class="bg-white p-3 md:p-10 rounded-[40px] shadow-xl border mb-12">
                 <!-- 18 SLOTS TOTAL (6 PER SEGMENT) -->
                 <div id="seg-exterior" class="gallery-content grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-                    <div onclick="openLightbox(0,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext1.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(1,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext2.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(2,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext3.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(3,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext4.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(4,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext5.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(5,'exterior')" class="h-32 md:h-64 card-3d"><img src="images/ext6.jpg" loading="lazy" class="img-card"></div>
+                    <div onclick="openLightbox(0,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext1.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(1,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext2.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(2,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext3.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(3,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext4.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(4,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext5.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(5,'exterior')" class="h-36 md:h-64 card-3d"><img src="images/ext6.jpg" loading="lazy" decoding="async" class="img-card"></div>
                 </div>
                 <div id="seg-rooms" class="gallery-content hidden grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-                    <div onclick="openLightbox(0,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed1.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(1,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed2.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(2,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed3.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(3,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed4.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(4,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed5.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(5,'rooms')" class="h-32 md:h-64 card-3d"><img src="images/bed6.jpg" loading="lazy" class="img-card"></div>
+                    <div onclick="openLightbox(0,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed1.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(1,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed2.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(2,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed3.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(3,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed4.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(4,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed5.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(5,'rooms')" class="h-36 md:h-64 card-3d"><img src="images/bed6.jpg" loading="lazy" decoding="async" class="img-card"></div>
                 </div>
                 <div id="seg-living" class="gallery-content hidden grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-                    <div onclick="openLightbox(0,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv1.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(1,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv2.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(2,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv3.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(3,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv4.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(4,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv5.jpg" loading="lazy" class="img-card"></div>
-                    <div onclick="openLightbox(5,'living')" class="h-32 md:h-64 card-3d"><img src="images/liv6.jpg" loading="lazy" class="img-card"></div>
+                    <div onclick="openLightbox(0,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv1.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(1,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv2.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(2,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv3.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(3,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv4.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(4,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv5.jpg" loading="lazy" decoding="async" class="img-card"></div>
+                    <div onclick="openLightbox(5,'living')" class="h-36 md:h-64 card-3d"><img src="images/liv6.jpg" loading="lazy" decoding="async" class="img-card"></div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-8 rounded-[40px] shadow-sm border card-3d">
-                    <h5 class="text-lg mb-4 text-green-700 italic border-b uppercase font-black text-center">Hospitality</h5>
-                    <ul class="text-[9px] font-black uppercase space-y-3 text-gray-500 tracking-[0.1em]">
-                        <li>Garden & Grill Area</li><li>Security 24/7 Link</li><li>Fast WiFi & Hot Shower</li><li>Cleaning (10am-12pm)</li><li>Equipped Kitchen</li><li>Secured Parking</li>
+                <div class="bg-white p-8 rounded-[40px] shadow-sm border card-3d text-center">
+                    <h5 class="text-xl mb-6 text-green-700 italic border-b-2 uppercase tracking-tighter">Hospitality</h5>
+                    <ul class="text-[9px] font-black uppercase space-y-3 text-gray-500 tracking-[0.1em] leading-relaxed">
+                        <li>Garden & Grill</li><li>Security 24/7 Link</li><li>Fast WiFi & Hot Shower</li><li>Cleaning (10am-12pm)</li><li>Equipped Kitchen</li><li>Secured Parking</li>
                     </ul>
                 </div>
                 <div class="bg-green-900 text-white p-8 rounded-[40px] shadow-2xl font-bold text-[10px] uppercase card-3d">
-                    <h5 class="text-lg mb-6 text-yellow-400 italic underline uppercase font-black text-center">Strategic Link</h5>
+                    <h5 class="text-xl mb-8 text-yellow-400 italic underline underline-offset-8 uppercase text-center">Strategic Link</h5>
                     <ul class="space-y-4">
                         <li class="flex justify-between border-b border-white/10 pb-1"><span>JKIA Airport</span> <span>30 Mins (23km)</span></li>
                         <li class="flex justify-between border-b border-white/10 pb-1"><span>Banks / ATMs</span> <span>5 Mins (1km)</span></li>
@@ -219,74 +221,76 @@
                         <li class="flex justify-between"><span>Hospital</span> <span>5 Mins (1km)</span></li>
                     </ul>
                 </div>
-                <div class="bg-white p-8 rounded-[40px] border-2 border-green-700 shadow-xl card-3d">
-                    <h5 class="text-lg mb-4 text-red-600 font-black italic uppercase underline text-center">Extra Costs</h5>
-                    <ul class="text-[9px] font-black uppercase space-y-3 text-gray-400">
+                <div class="bg-white p-8 rounded-[40px] border-2 border-green-700 shadow-xl card-3d text-center">
+                    <h5 class="text-2xl mb-8 text-red-600 font-black italic uppercase underline decoration-red-200 underline-offset-4">Extra Costs</h5>
+                    <ul class="text-[9px] font-black uppercase space-y-4 text-gray-400 tracking-widest">
                         <li>- Private Chef Service</li><li>- Personal Laundry</li><li>- Dedicated Driver/Taxi</li><li>- Swahili Dish Menu</li>
                     </ul>
-                    <p class="mt-6 text-[8px] font-black text-green-700 text-center border-t pt-3 uppercase tracking-widest">Rates on Booking Request</p>
+                    <p class="mt-8 text-[8px] font-black text-green-700 border-t pt-4 uppercase tracking-widest italic">Rates on Booking Request</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. SAFARI HUB (ACCURATE DISTANCES RESTORED) -->
+    <!-- 4. SAFARI HUB (DISTANCES FULLY RESTORED) -->
     <section id="tours" class="py-24 px-6 max-w-7xl mx-auto bg-white">
-        <h2 class="text-center text-4xl md:text-5xl font-black mb-12 uppercase tracking-tighter italic">Safari Hub</h2>
+        <h2 class="text-center text-4xl md:text-5xl font-black mb-12 uppercase tracking-tighter italic italic">Safari Hub</h2>
         
         <div class="mb-24 text-center">
             <h4 class="text-2xl font-black mb-10 italic uppercase tracking-widest text-green-700 border-b-2 inline-block">Outside Nairobi</h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="img-container h-64 card-3d relative shadow-xl" onclick="openLightbox(0, 'toursOut')">
-                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e" loading="lazy" class="img-card">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e" loading="lazy" decoding="async" class="img-card">
                     <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-5 text-white uppercase font-black italic text-left">Mara<p class="text-[8px] text-green-400">240km Drive / 5.5 Hrs</p></div>
                 </div>
                 <div class="img-container h-64 card-3d relative shadow-xl" onclick="openLightbox(1, 'toursOut')">
-                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" loading="lazy" class="img-card">
+                    <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801" loading="lazy" decoding="async" class="img-card">
                     <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-5 text-white uppercase font-black italic text-left">Serengeti<p class="text-[8px] text-green-400">413km Drive / 8.5 Hrs</p></div>
                 </div>
                 <div class="img-container h-64 card-3d relative shadow-xl" onclick="openLightbox(2, 'toursOut')">
-                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53" loading="lazy" class="img-card">
-                    <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-5 text-white uppercase font-black italic text-left">Hell's Gate<p class="text-[8px] text-green-400">120km Drive / 2.5 Hrs</p></div>
+                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53" loading="lazy" decoding="async" class="img-card">
+                    <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-5 text-white uppercase font-black italic text-left leading-none">Hell's Gate Gorge<p class="text-[8px] text-green-400 mt-1">120km Drive / 2.5 Hrs</p></div>
                 </div>
                 <div class="img-container h-64 card-3d relative shadow-xl" onclick="openLightbox(3, 'toursOut')">
-                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" loading="lazy" class="img-card">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" loading="lazy" decoding="async" class="img-card">
                     <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-5 text-white uppercase font-black italic text-left">Amboseli<p class="text-[8px] text-green-400">160km Drive / 3.5 Hrs</p></div>
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <!-- NAIROBI EXPERIENCE DISTANCES -->
             <div>
                 <h4 class="text-xl font-black mb-8 text-green-700 italic border-b uppercase text-center md:text-left">Nairobi Experience</h4>
                 <div class="grid grid-cols-3 gap-3 text-center">
                     <div onclick="openLightbox(0, 'nairobi')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/giraffe.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
-                        <p class="text-[8px] font-black p-1 uppercase">28km Dist.</p>
+                        <img src="images/giraffe.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
+                        <p class="text-[8px] font-black p-1 uppercase">28km from Kitengela</p>
                     </div>
                     <div onclick="openLightbox(1, 'nairobi')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/park.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
-                        <p class="text-[8px] font-black p-1 uppercase">25km Dist.</p>
+                        <img src="images/park.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
+                        <p class="text-[8px] font-black p-1 uppercase">25km from Kitengela</p>
                     </div>
                     <div onclick="openLightbox(2, 'nairobi')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/museum.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
-                        <p class="text-[8px] font-black p-1 uppercase">35km Dist.</p>
+                        <img src="images/museum.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
+                        <p class="text-[8px] font-black p-1 uppercase">35km from Kitengela</p>
                     </div>
                 </div>
             </div>
+            <!-- NATURE TRAIL DISTANCES -->
             <div>
                 <h4 class="text-xl font-black mb-8 text-green-700 italic border-b uppercase text-center md:text-left">Nature Trails</h4>
                 <div class="grid grid-cols-3 gap-3 text-center">
                     <div onclick="openLightbox(0, 'nature')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/ngong.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
+                        <img src="images/ngong.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
                         <p class="text-[8px] font-black p-1 uppercase">50km Drive</p>
                     </div>
                     <div onclick="openLightbox(1, 'nature')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/karura.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
+                        <img src="images/karura.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
                         <p class="text-[8px] font-black p-1 uppercase">40km Drive</p>
                     </div>
                     <div onclick="openLightbox(2, 'nature')" class="card-3d h-28 rounded-xl shadow-lg border overflow-hidden">
-                        <img src="images/oloolua.jpg" loading="lazy" class="img-card" onerror="this.src='https://via.placeholder.com/150'">
+                        <img src="images/oloolua.jpg" loading="lazy" decoding="async" class="img-card" onerror="this.src='https://via.placeholder.com/200'">
                         <p class="text-[8px] font-black p-1 uppercase">30km Drive</p>
                     </div>
                 </div>
@@ -302,17 +306,17 @@
                 <div id="commentList" class="space-y-4 max-h-[400px] overflow-y-auto pr-3">
                     <div class="bg-white p-8 rounded-[35px] shadow-lg border-l-4 border-green-700">
                         <div class="text-yellow-500 mb-3 flex gap-1"><i class="fas fa-star text-[10px]"></i><i class="fas fa-star text-[10px]"></i><i class="fas fa-star text-[10px]"></i><i class="fas fa-star text-[10px]"></i><i class="fas fa-star text-[10px]"></i></div>
-                        <p class="text-[11px] italic font-semibold text-gray-500 leading-relaxed">"International standards in Kitengela. Professional logistics and serene stay."</p>
+                        <p class="text-[11px] italic font-semibold text-gray-500 leading-relaxed">"Reliability is truly their middle name. Highly professional and welcoming team."</p>
                         <p class="mt-4 text-[9px] font-black uppercase text-green-700 tracking-widest">- Verified Executive Guest</p>
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-8 md:p-12 rounded-[50px] shadow-2xl border">
-                <h5 class="font-black uppercase text-xl mb-8 italic text-green-800">Post Feedback</h5>
+            <div class="bg-white p-8 md:p-10 rounded-[50px] shadow-2xl border">
+                <h5 class="font-black uppercase text-xl mb-8 italic text-green-800 underline underline-offset-8">Rate Our Service</h5>
                 <form id="ratingForm" class="space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <input type="text" id="reviewName" placeholder="NAME *" class="w-full bg-gray-50 p-5 rounded-2xl outline-none font-bold text-[10px] uppercase border">
-                        <input type="text" id="reviewContact" placeholder="EMAIL/PHONE *" class="w-full bg-gray-50 p-5 rounded-2xl outline-none font-bold text-[10px] uppercase border">
+                        <input type="text" id="reviewName" placeholder="NAME *" class="w-full bg-gray-50 p-5 rounded-2xl outline-none font-bold text-[10px] uppercase border shadow-inner">
+                        <input type="text" id="reviewContact" placeholder="EMAIL/PHONE *" class="w-full bg-gray-50 p-5 rounded-2xl outline-none font-bold text-[10px] uppercase border shadow-inner">
                     </div>
                     <div class="flex gap-4 text-3xl text-gray-100" id="starSelection">
                         <i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(1)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(2)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(3)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(4)"></i><i class="fas fa-star cursor-pointer hover:text-yellow-500" onclick="setRating(5)"></i>
@@ -326,24 +330,25 @@
 
     <!-- LEADERSHIP BOARD -->
     <section class="py-24 px-6 max-w-7xl mx-auto text-center bg-white">
-        <h2 class="text-3xl font-black mb-16 uppercase tracking-tighter italic">Leadership Board</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 font-black tracking-widest text-[9px] uppercase text-gray-500">
-            <div data-aos="zoom-in"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/founder.jpg" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800 italic underline decoration-green-700">Co-Founder</h5></div>
-            <div data-aos="zoom-in" data-aos-delay="100"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/marketing.jpg" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800">Marketing Mgr</h5></div>
-            <div data-aos="zoom-in" data-aos-delay="200"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/tours_manager.jpg" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800">Tours Mgr</h5></div>
-            <div data-aos="zoom-in" data-aos-delay="300"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/hospitality_manager.jpg" loading="lazy" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800 leading-tight">Hospitality Mgr</h5></div>
+        <h2 class="text-3xl font-black mb-16 uppercase tracking-tighter italic italic">Leadership Board</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 uppercase font-black tracking-widest text-[9px] text-gray-500">
+            <div data-aos="zoom-in"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/founder.jpg" loading="lazy" decoding="async" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800 underline decoration-green-700">Co-Founder</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="100"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/marketing.jpg" loading="lazy" decoding="async" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800">Marketing Mgr</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="200"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/tours_manager.jpg" loading="lazy" decoding="async" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800">Tours Mgr</h5></div>
+            <div data-aos="zoom-in" data-aos-delay="300"><div class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-gray-50 shadow-xl"><img src="images/hospitality_manager.jpg" loading="lazy" decoding="async" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'"></div><h5 class="text-gray-800 leading-tight">Hospitality Mgr</h5></div>
         </div>
     </section>
 
     <!-- FOOTER & SOCIALS -->
     <footer id="contact" class="py-24 px-6 border-t bg-white text-center">
-        <h3 class="text-4xl font-black italic mb-8 uppercase tracking-tighter decoration-green-700 underline underline-offset-[12px] italic">Command Center</h3>
+        <h3 class="text-5xl font-black italic mb-10 uppercase tracking-tighter decoration-green-700 underline underline-offset-[15px] italic">Command Center</h3>
         <div class="space-y-4 text-gray-700 font-black text-xl mb-12 uppercase tracking-tighter italic leading-none">
             <p>+254 711 942 907</p><p>+254 710 813 573</p>
             <p class="text-green-700 underline text-sm">info@reliablemhsgroup.com</p>
             <p class="text-[9px] text-gray-400 tracking-[0.4em] mt-4">Kitengela, Nairobi Kenya</p>
         </div>
 
+        <!-- SOCIAL LINKS IN href="" -->
         <div class="flex justify-center space-x-6 mb-20">
             <a href="https://www.facebook.com/share/16svgFagpj/" target="_blank" class="social-circle shadow-lg"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/reliablemhs" target="_blank" class="social-circle shadow-lg"><i class="fab fa-instagram"></i></a>
@@ -351,7 +356,7 @@
             <a href="https://wa.me/254710813573" target="_blank" class="social-circle shadow-lg"><i class="fab fa-whatsapp"></i></a>
         </div>
 
-        <p class="text-[9px] font-black tracking-[1em] uppercase text-gray-300 italic opacity-60">RELIABLE MHS GROUP © ALL RIGHTS RESERVED • EST. 2013</p>
+        <p class="text-[9px] font-black tracking-[0.8em] uppercase text-gray-300 italic opacity-60">RELIABLE MHS GROUP © ALL RIGHTS RESERVED • EST. 2013</p>
     </footer>
 
     <!-- SCRIPTS -->
@@ -385,7 +390,10 @@
             currentIndex = (currentIndex + dir + currentGallery.length) % currentGallery.length;
             updateLightbox();
         }
-        function updateLightbox() { document.getElementById('lightbox-img').src = currentGallery[currentIndex]; }
+        function updateLightbox() { 
+            const img = document.getElementById('lightbox-img');
+            img.src = currentGallery[currentIndex]; 
+        }
 
         function toggleChat() {
             const box = document.getElementById('chatBox');
@@ -395,9 +403,9 @@
         function aiSearch() {
             const input = document.getElementById('chatInput').value.toLowerCase();
             const body = document.getElementById('chatBody');
-            let res = "I am processing your inquiry... Rates are custom quoted based on your request. Use WhatsApp for immediate live support.";
-            if(input.includes("airport")) res = "We are exactly 23km (30 Mins) from JKIA Airport.";
-            if(input.includes("price") || input.includes("cost")) res = "Room rate: KES 2,500 ($20 USD). Tour rates vary by destination.";
+            let res = "Searching our database... Room rates are KES 2,500 ($20). Safari rates depend on group size and season. Please use WhatsApp for immediate quotes.";
+            if(input.includes("airport")) res = "We are exactly 23km (30 Mins) from JKIA.";
+            if(input.includes("distance")) res = "Banks: 1km, JKIA: 23km, Karura: 40km, Ngong Hills: 50km. All from our central Kitengela location.";
             body.innerHTML += `<div class="bg-green-100 p-4 rounded-xl text-right font-black italic uppercase text-[9px]">You: ${input}</div>`;
             body.innerHTML += `<div class="bg-white p-4 rounded-xl border-2 border-green-700 font-black text-green-700 shadow-md uppercase text-[9px]">AI: ${res}</div>`;
             document.getElementById('chatInput').value = ""; body.scrollTop = body.scrollHeight;
